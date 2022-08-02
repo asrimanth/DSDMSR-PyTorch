@@ -28,7 +28,9 @@ The second command indexes the downsampled folder to create a .csv indexed file.
 The third command starts training on the data, using the DCNN unit as VDSR Net. If there is not enough compute power available, please run train_dtu.py instead of train_dtu_vdsr.py, since the former uses SRCNN as the DCNN unit, which is significantly less computationally expensive.
 
 ## Experimental Results on Validation set:
-Image legend: (Pred => Prediction, GT => Ground Truth, MSF => Multi-Scale Fusion, as proposed in the paper).
+**Image legend:**
+
+(Pred => Prediction, GT => Ground Truth, MSF => Multi-Scale Fusion, as proposed in the paper).
 Top Left: x128 Pred, Top Right: x128 GT, 2nd row Left: x256 Pred, 2nd row Right: x256 GT, 3rd row Left: x512 Pred, 3rd row Right: x512 MSF, Last row Left: x512 GT, Last row Right: x64 Input.
 
 | Example 0                                      | Example 1                                      | Example 2                                      | Example 3                                      | Example 4                                      | Example 5                                      |
@@ -36,7 +38,7 @@ Top Left: x128 Pred, Top Right: x128 GT, 2nd row Left: x256 Pred, 2nd row Right:
 | At index : 860.                                | At index : 1095.                               | At index : 1126.                               | At index : 1130.                               | At index : 1294.                               | At index : 1459.                               |
 | ![Example 0.](./example-outputs/example_0.png) | ![Example 1.](./example-outputs/example_1.png) | ![Example 2.](./example-outputs/example_2.png) | ![Example 3.](./example-outputs/example_3.png) | ![Example 4.](./example-outputs/example_4.png) | ![Example 5.](./example-outputs/example_5.png) |
 
-# Credits
+## Credits
 
 ### Deeply Supervised Depth Map Super-Resolution as Novel View Synthesis.
 **Xibin Song, Yuchao Dai, and Xueying Qin**
